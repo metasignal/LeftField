@@ -14,7 +14,17 @@ html {
     background-color: white;
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 3em;
+    font-family: 'PT Mono', monospace;
+}
+
+.required {
+    font-family: 'PT Mono', monospace;
+    font-size:1.13em;
+}
+
+#mce-EMAIL {
+    height: 36px;
 }
 
 /*
@@ -119,8 +129,14 @@ textarea {
      /*whatever width you want*/
    }
 
+   .inner p {
+     line-height: 1.7em;
 
+   }
 
+  .inner h1 {
+    font-weight: 400;
+  }
 
 
 /* ==========================================================================
