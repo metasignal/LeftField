@@ -11,6 +11,7 @@
    ========================================================================== */
 
 html {
+    background-color: white;
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -99,7 +100,24 @@ textarea {
 
 
 
+   .outer {
+     display: table;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+   }
 
+   .middle {
+     display: table-cell;
+     vertical-align: middle;
+   }
+
+   .inner {
+     margin-left: auto;
+     margin-right: auto;
+     width: 540px;
+     /*whatever width you want*/
+   }
 
 
 
