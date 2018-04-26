@@ -47,7 +47,7 @@ h1.title {
   margin-left: auto;
   margin-right: auto;
   width: 600px;
-   /* background-color: #d3d3d3; */
+
 }
 
 .inner p {
@@ -67,20 +67,23 @@ form#mc-embedded-subscribe-form {
 
 #mce-EMAIL {
     margin-left: 0;
-    height: 60px;
-    background-color: black;
+    background-color: #0D0D0D;
     border: 0px solid;
     font-family: 'neue haas unica pro', helvetica;
     color:white;
     border-radius: 4px 0px 0px 4px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 40px 0px 20px;
+    line-height: 1em;
     width:60%;
+    height:70px;
 }
 
 #mc_embed_signup input {
   border: 0px solid;
   float:left;
-  height:75px;
+  height:70px;
+  line-height: normal;
+
 }
 
 #mc-embedded-subscribe {
@@ -99,27 +102,63 @@ form#mc-embedded-subscribe-form {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #606060;
+  line-height: normal;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: #606060;
+  line-height: normal;
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: #606060;
+  line-height: normal;
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #606060;
+  line-height: normal;
 }
 
 textarea:focus, input:focus{
     outline: none;
 }
 
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:320px)  {
+/* smartphones, iPhone, portrait 480x320 phones */
+.inner {
+  width:320px;
+}
+
+}
+@media (min-width:481px)  {
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+.inner {
+  width:360px;
+}
+
+
+
+}
+@media (min-width:641px)  {
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+.inner {
+  width:400px;
+}
+
+}
+@media (min-width:961px)  {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+    .inner {
+      width:600px;
+    }
+}
+
+/* @media (min-width:1025px) { */
+/* big landscape tablets, laptops, and desktops */
+    /* background-color: blue; */
+/* } */
+/* @media (min-width:1281px) { */
+/* hi-res laptops and desktops */
+
+/* } */
 
 /*
  * Remove text-shadow in selection highlight:
@@ -296,9 +335,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
