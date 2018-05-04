@@ -83,6 +83,7 @@ form#mc-embedded-subscribe-form {
   float:left;
   height:70px;
   line-height: normal;
+  margin-bottom:20px;
 
 }
 
@@ -90,10 +91,21 @@ form#mc-embedded-subscribe-form {
   font-family: 'neue haas unica pro', helvetica;
   background-color: #2F2F2F;
   border-radius: 0px 4px 4px 0px;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 20px 0px 20px;
   font-size: 1.2em;
   float: right;
   display: block;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: #171717 !important;
+  padding:0px !important;
+  font-weight:normal !important;
+}
+#mce-error-response {
+  background-color:#171717 !important;
+  padding:0px !important;
+  font-weight:normal !important;
 }
 
 .mc-field-group {
@@ -117,9 +129,13 @@ form#mc-embedded-subscribe-form {
   line-height: normal;
 }
 
-/* textarea:focus, input:focus{
+  textarea:focus, input:focus{
     outline: none;
 }
+
+
+/* Here are the media queries */
+
 
 @media (min-width:320px)  {
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -127,9 +143,18 @@ form#mc-embedded-subscribe-form {
     width:320px;
   }
 
+  #mce-EMAIL {
+    width:260px;
+    border-radius: 4px 4px 4px 4px;
+  }
+
   #mc-embedded-subscribe {
-    background-color: yellow;
-    width:100%;
+    border-radius: 4px 4px 4px 4px;
+    width:320px;
+  }
+
+  .inner p {
+    font-size: .8em;
 
   }
 
@@ -137,34 +162,63 @@ form#mc-embedded-subscribe-form {
 @media (min-width:481px)  {
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   .inner {
+    width:400px;
+  }
+
+  #mce-EMAIL {
     width:360px;
+    border-radius: 4px 4px 4px 4px;
+  }
+
+  .inner p {
+    font-size: 1em;
+
   }
   #mc-embedded-subscribe {
-    background-color: red;
-    width:100%;
+    border-radius: 4px 4px 4px 4px;
+    width:420px;
   }
 }
 @media (min-width:641px)  {
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   .inner {
-    width:400px;
+    width:500px;
+  }
+
+  #mce-EMAIL {
+    width:59%;
   }
 
   #mc-embedded-subscribe {
-    background-color: orange;
-    width:120px;
+    border-radius: 0px 4px 4px 0px;
+    width:140px;
+  }
+
+  .inner p {
+    font-size: 1em;
+
   }
 
 }
 @media (min-width:961px)  {
 /* tablet, landscape iPad, lo-res laptops ands desktops */
     .inner {
-      width:600px;
+      width:630px;
     }
+
+    #mce-EMAIL {
+      width:59%;
+    }
+
     #mc-embedded-subscribe {
-      background-color: violet;
-      width:120px;
+      border-radius: 0px 4px 4px 0px;
+      width:140px;
     }
+    .inner p {
+      font-size: 1em;
+
+    }
+
 } */
 
 /* @media (min-width:1025px) { */
