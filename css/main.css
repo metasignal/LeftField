@@ -97,6 +97,10 @@ form#mc-embedded-subscribe-form {
   display: block;
 }
 
+.mce-embedded-subscribe-active {
+  color:white !important;
+}
+
 #mc_embed_signup div.mce_inline_error {
   background-color: #171717 !important;
   padding:0px !important;
